@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Statements</title>
+</head>
+<body>
+    <script>
+        let eyes = 'blue';
+
+        if(eyes == 'blue') {
+            document.write("Your eyes are blue");
+        } else if(eyes == 'brown'){
+            document.write("Your eyes are brown");
+        } else if(eyes == 'green') {
+            document.write("Your eyes are green")
+        } else {
+            document.write("Your eye color is unique.")
+        }
+
+        switch(eyes) {
+            case 'blue':
+            case 'brown': 
+            case 'green':
+                console.log("Your eyes are " + eyes);
+                break; 
+            default: 
+                console.log("Your eyes are rare.")
+                break;
+        }
+
+        if(eyes == 'blue' || eyes == 'brown' || eyes == 'green') {
+            console.log("Your eyes are " + eyes)
+        } else {
+            console.log("Your eyes are rare.")
+        }
+
+        
+    </script>
+</body>
+</html>
