@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <script>
+        //C = 5/9 x (F - 32)
+        function toCelsius(temp) {
+            return (5/9) * (temp - 32);
+        }
+        // (0°C × 9/5) + 32
+        function toFahrenheit(temp) {
+            return ((9/5) * temp) + 32;
+        }
+
+        function printFToC(temp){
+            console.log(temp + "f = "  + toCelsius(temp) + "c");
+        }
+
+        function printCToF(temp){
+            console.log(temp + "c = " + toFahrenheit(temp) + "f");
+        }
+
+        printFToC(88);
+        printCToF(32);
+
+        say = (words) => {
+            console.log(words);
+        }
+
+        say("hello world");
+    </script>
+</body>
+</html>
